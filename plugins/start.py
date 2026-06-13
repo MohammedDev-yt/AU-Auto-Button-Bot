@@ -1,4 +1,3 @@
-
 # ------------------------- #
 # Don't Remove Credit
 # Owner @Mr_Mohammed_29
@@ -6,16 +5,11 @@
 
 import asyncio
 
-from pyrogram import Client, filters
+from pyrogram import Client, filters, enums
 from pyrogram.types import (
     InlineKeyboardMarkup,
     InlineKeyboardButton
 )
-
-# ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
-# ------------------------- #
 
 from database import add_user
 from config import (
@@ -28,7 +22,9 @@ from config import (
 # Owner @Mr_Mohammed_29
 # ------------------------- #
 
+
 START_IMAGE = "https://graph.org/file/8cc7c4d5f0989b8efad96-f5d88bacd8e8049c9b.jpg"
+
 
 # ------------------------- #
 # Don't Remove Credit 
@@ -58,7 +54,6 @@ def buttons():
         ]
     )
 
-
 # ------------------------- #
 # Don't Remove Credit 
 # Owner @Mr_Mohammed_29
@@ -68,7 +63,6 @@ def buttons():
     filters.command("start")
     & filters.private
 )
-
 async def start(client, message):
 
     await add_user(
@@ -87,6 +81,7 @@ async def start(client, message):
         "sᴜɴ ɢᴏᴅ ɴɪᴋᴀ!...",
         "✅ Started!"
     ]:
+
         await asyncio.sleep(0.5)
         await m.edit_text(text)
 
@@ -100,24 +95,23 @@ async def start(client, message):
 
 
     await client.send_photo(
-        message.chat.id,
+        chat_id=message.chat.id,
         photo=START_IMAGE,
         caption=START_TEXT.format(
             mention=message.from_user.mention
         ),
-        parse_mode="html",
+        parse_mode=enums.ParseMode.HTML,
         reply_markup=buttons()
     )
 
-
 # ------------------------- #
-# ABOUT
+# Don't Remove Credit 
+# Owner @Mr_Mohammed_29
 # ------------------------- #
 
 @Client.on_callback_query(
     filters.regex("about")
 )
-
 async def about(client, query):
 
     about_buttons = InlineKeyboardMarkup(
@@ -136,39 +130,37 @@ async def about(client, query):
 
 
     await client.send_photo(
-        query.message.chat.id,
+        chat_id=query.message.chat.id,
         photo=START_IMAGE,
         caption=ABOUT_TEXT,
-        parse_mode="html",
+        parse_mode=enums.ParseMode.HTML,
         reply_markup=about_buttons
     )
 
-
 # ------------------------- #
-# HOME
+# Don't Remove Credit 
+# Owner @Mr_Mohammed_29
 # ------------------------- #
 
 @Client.on_callback_query(
     filters.regex("home")
 )
-
 async def home(client, query):
 
     await query.message.delete()
 
 
     await client.send_photo(
-        query.message.chat.id,
+        chat_id=query.message.chat.id,
         photo=START_IMAGE,
         caption=START_TEXT.format(
             mention=query.from_user.mention
         ),
-        parse_mode="html",
+        parse_mode=enums.ParseMode.HTML,
         reply_markup=buttons()
     )
 
-
 # ------------------------- #
-# Don't Remove Credit
+# Don't Remove Credit 
 # Owner @Mr_Mohammed_29
 # ------------------------- #
