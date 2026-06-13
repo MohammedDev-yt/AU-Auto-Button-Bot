@@ -61,7 +61,7 @@ keyboard = InlineKeyboardMarkup(
 async def post(_, message):
 
     if not await allowed(message.from_user.id):
-        return await message.reply_text("❌ Not allowed")
+        return await message.reply_text("‼️ Nᴏᴛ Aʟʟᴏᴡᴇᴅ")
 
     try:
 
@@ -84,7 +84,7 @@ async def post(_, message):
                 reply_markup=keyboard
             )
 
-        # VIDEO (FIXED THUMBNAIL HANDLING)
+        # VIDEO 
         elif message.video:
 
             await _.send_video(
@@ -95,7 +95,7 @@ async def post(_, message):
                 reply_markup=keyboard
             )
 
-        # DOCUMENT (FIXED THUMBNAIL HANDLING)
+        # DOCUMENT 
         elif message.document:
 
             await _.send_document(
