@@ -3,6 +3,8 @@
 # Owner @Mr_Mohammed_29
 # ------------------------- #
 
+import os
+
 from pyrogram import (
     Client,
     filters
@@ -78,8 +80,8 @@ async def thumbnail(_, message):
         )
 
 
-    THUMBNAIL = (
-        message.reply_to_message.photo.file_id
+    THUMBNAIL = await message.reply_to_message.download(
+        file_name="thumbnail.jpg"
     )
 
 
@@ -164,7 +166,6 @@ async def post(_, message):
             )
 
 
-
         await message.reply_text(
             "✅ Posted"
         )
@@ -181,6 +182,7 @@ async def post(_, message):
         await message.reply_text(
             str(e)
         )
+
 
 # ------------------------- #
 # Don't Remove Credit 
