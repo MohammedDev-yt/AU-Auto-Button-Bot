@@ -17,12 +17,6 @@
 
 ---
 
-# 🚀 AU Auto Button Bot
-
-A powerful Telegram bot that automatically posts messages to channels with inline buttons, admin system, stats tracking, and logging features.
-
----
-
 ## ✨ Features
 
 - 📢 Auto post text, photo, video & documents  
