@@ -39,8 +39,8 @@ BOT_USERNAME = "AU_AutoButtonAdder_bot"
 
 BUTTONS = [
     [
-        ("📢 Updates", "https://t.me/Anime_UpdatesAU"),
-        ("🏴‍☠️ One Piece", "https://t.me/+t_RfBWnTbqNhYWVl")
+        ("• Uᴘᴅᴀᴛᴇs •", "https://t.me/Anime_UpdatesAU"),
+        ("• Oɴᴇ Pɪᴇᴄᴇ •", "https://t.me/+t_RfBWnTbqNhYWVl")
     ]
 ]
 
