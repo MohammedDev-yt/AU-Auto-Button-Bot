@@ -1,3 +1,4 @@
+
 # ------------------------- #
 # Don't Remove Credit 
 # Owner @Mr_Mohammed_29
@@ -13,8 +14,7 @@ from database import (
 )
 
 # ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
+# OWNER CHECK
 # ------------------------- #
 
 def owner(_, __, msg):
@@ -28,116 +28,95 @@ def owner(_, __, msg):
 owner_filter = filters.create(owner)
 
 # ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
+# ADD ADMIN
 # ------------------------- #
 
 @Client.on_message(
-    filters.command("addadmin")
-    & owner_filter
+    filters.command("addadmin") & owner_filter
 )
-
-# ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
-# ------------------------- #
-
-async def add_admin_cmd(
-    client,
-    message
-):
+async def add_admin_cmd(client, message):
 
     if len(message.command) < 2:
-
         return await message.reply_text(
-            "Usage:\n/addadmin USER_ID"
+            "Usᴀɢᴇ:\n/addadmin USER_ID"
         )
 
-
-    uid = int(
-        message.command[1]
-    )
+    uid = int(message.command[1])
 
     await add_admin(uid)
+
+    # 🔔 NOTIFY USER
+    try:
+        await client.send_message(
+            uid,
+            "🎊 Cᴏɴɢʀᴀᴛs, Yᴏᴜ ʜᴀᴠᴇ ʙᴇᴇɴ ᴘʀᴏᴍᴏᴛᴇᴅ ᴛᴏ Aᴅᴍɪɴ!\ɴ\ɴYᴏᴜ ᴄᴀɴ ɴᴏᴡ ᴜsᴇ ᴀᴅᴍɪɴ ғᴇᴀᴛᴜʀᴇs ᴏғ ᴛʜᴇ ʙᴏᴛ."
+        )
+    except:
+        pass
 
     await message.reply_text(
         f"✅ Admin Added\n{uid}"
     )
 
 # ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
+# REMOVE ADMIN
 # ------------------------- #
 
 @Client.on_message(
-    filters.command("removeadmin")
-    & owner_filter
+    filters.command("removeadmin") & owner_filter
 )
-
-# ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
-# ------------------------- #
-
-async def remove_admin_cmd(
-    client,
-    message
-):
+async def remove_admin_cmd(client, message):
 
     if len(message.command) < 2:
-
         return await message.reply_text(
             "Usage:\n/removeadmin USER_ID"
         )
 
-
-    uid = int(
-        message.command[1]
-    )
+    uid = int(message.command[1])
 
     await remove_admin(uid)
 
+    # 🔔 NOTIFY USER
+    try:
+        await client.send_message(
+            uid,
+            "⚠️ You have been removed from Admin role."
+        )
+    except:
+        pass
 
     await message.reply_text(
         f"✅ Admin Removed\n{uid}"
     )
 
 # ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
+# LIST ADMINS
 # ------------------------- #
 
 @Client.on_message(
-    filters.command("admins")
-    & owner_filter
+    filters.command("admins") & owner_filter
 )
-
-# ------------------------- #
-# Don't Remove Credit 
-# Owner @Mr_Mohammed_29
-# ------------------------- #
-
-async def admins_cmd(
-    client,
-    message
-):
+async def admins_cmd(client, message):
 
     admins = await get_admins()
 
-
     if not admins:
+        return await message.reply_text("No admins")
 
-        return await message.reply_text(
-            "No admins"
-        )
+    text = "👮 Admins List\n\n"
 
+    for uid in admins:
 
-    text = "👮 Admins\n\n"
+        try:
+            user = await client.get_users(uid)
 
-    for x in admins:
+            name = user.first_name or "No Name"
+            username = f"@{user.username}" if user.username else "No Username"
 
-        text += f"• {x}\n"
+            text += f"• {name} ({username}) - `{uid}`\n"
 
+        except:
+            text += f"• Unknown - `{uid}`\n"
 
     await message.reply_text(text)
 
