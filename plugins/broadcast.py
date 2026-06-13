@@ -29,8 +29,7 @@ owner_filter = filters.create(owner)
 # ------------------------- #
 
 @Client.on_message(
-    filters.command("broadcast")
-    & owner_filter
+    filters.command("broadcast") & admin_filter
 )
 async def broadcast(
     client,
