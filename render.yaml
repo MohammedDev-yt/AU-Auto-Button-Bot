@@ -1,0 +1,15 @@
+# ------------------------- #
+# Don't Remove Credit 
+# Owner @Mr_Mohammed_29
+# ------------------------- #
+
+services:
+  - type: web
+    name: au-auto-button-bot
+    env: docker
+    plan: free
+
+# ------------------------- #
+# Don't Remove Credit 
+# Owner @Mr_Mohammed_29
+# ------------------------- #
