@@ -8,14 +8,16 @@ from config import LOG_CHANNEL
 
 async def send_log(client, text):
 
-    if not LOG_CHANNEL:
-        return
-
     try:
 
         await client.send_message(
-            LOG_CHANNEL,
-            text
+            chat_id=LOG_CHANNEL,
+            text=f"""
+📌 <b>BOT LOG</b>
+
+{text}
+""",
+            parse_mode="html"
         )
 
     except Exception as e:
