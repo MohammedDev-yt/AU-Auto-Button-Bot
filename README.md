@@ -134,7 +134,5 @@ MONGO_URI
 <p align="center">
 If you like this bot, please give it a ⭐ on GitHub.
 
-<a href="https://github.com/MD-Developer-yt/AU-Auto-Button-bot">
-⭐ Star Repository
-</a>
+<a href="https://github.com/MD-Developer-yt/AU-Auto-Button-Bot">⭐ Star Repository</a>
 </p>
