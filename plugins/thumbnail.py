@@ -5,6 +5,7 @@
 
 from pyrogram import Client, filters
 from config import OWNER_ID
+from plugins.filters import admin_filter
 
 # shared global variable
 THUMBNAIL = None
