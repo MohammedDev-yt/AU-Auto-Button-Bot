@@ -38,7 +38,7 @@ def buttons():
             [
                 InlineKeyboardButton(
                     "• Uᴘᴅᴀᴛᴇs •",
-                    url="https://t.me/Anime_UpdatesAU"
+                    url="https://t.me/Aero_Unity"
                 ),
                 InlineKeyboardButton(
                     "• Oᴡɴᴇʀ •",
