@@ -82,23 +82,23 @@ ABOUT_TEXT = """
 <b> AU Auto Button Bot</b>
 
 <b>
-🤖 Nᴀᴍᴇ : <a href="https://t.me/AU_AutoButtonAdder_bot">AU Auto Button Bot</a>
+• Nᴀᴍᴇ •: <a href="https://t.me/AU_AutoButtonAdder_bot">AU Auto Button Bot</a>
 
-📚 Lɪʙʀᴀʀʏ : Pʏʀᴏɢʀᴀᴍ 2.0
+• Lɪʙʀᴀʀʏ •: Pʏʀᴏɢʀᴀᴍ 2.0
 
-💻 Lᴀɴɢᴜᴀɢᴇ : Pʏᴛʜᴏɴ 𝟹
+• Lᴀɴɢᴜᴀɢᴇ •: Pʏᴛʜᴏɴ 𝟹
 
-⚙️ Sᴇʀᴠᴇʀ : <a href="https://render.com/">Rᴇɴᴅᴇʀ</a>
+• Sᴇʀᴠᴇʀ •: <a href="https://render.com/">Rᴇɴᴅᴇʀ</a>
 
-🗄️ Dᴀᴛᴀʙᴀsᴇ : MᴏɴɢᴏDB
+• Dᴀᴛᴀʙᴀsᴇ •: MᴏɴɢᴏDB
 
-🚀 Bᴜɪʟᴅ Sᴛᴀᴛᴜs : <a href="https://t.me/Mr_Mohammed_29">Sᴛᴀʙʟᴇ ✅</a>
+• Bᴜɪʟᴅ Sᴛᴀᴛᴜs • : <a href="https://t.me/Aero_Unity">Sᴛᴀʙʟᴇ ✅</a>
 
-👨‍💻 Pʀᴏɢʀᴀᴍᴍᴇʀ : <a href="https://t.me/Mr_Mohammed_29">Mᴏʜᴀᴍᴍᴇᴅ</a>
+• Pʀᴏɢʀᴀᴍᴍᴇʀ •: <a href="https://t.me/Mr_Mohammed_29">Mᴏʜᴀᴍᴍᴇᴅ</a>
 
-📢 Uᴘᴅᴀᴛᴇs : <a href="https://t.me/Anime_UpdatesAU">Anime Updates AU</a>
+• Uᴘᴅᴀᴛᴇs • : <a href="https://t.me/Aero_Unity">ᴀᴇʀᴏ ᴜɴɪᴛʏ</a>
 
-🌐 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ : <a href="https://github.com/MD-Developer-yt/AU_Auto-Button-Bot">Gɪᴛʜᴜʙ</a>
+• Sᴏᴜʀᴄᴇ Cᴏᴅᴇ •: <a href="https://github.com/MohammedDev-yt/AU_Auto-Button-Bot">Gɪᴛʜᴜʙ</a>
 </b>
 
 <b>⍟──────────────⍟</b>
