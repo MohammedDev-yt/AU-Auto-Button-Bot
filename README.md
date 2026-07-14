@@ -32,12 +32,6 @@
 
 ---
 
-## 🤖 Demo Bot
-
-**Bot:** <a href="https://t.me/AU_AutoButtonsAdder_bot">AU Auto Button Bot</a>
-
----
-
 <details>
 <summary><b>⚙️ Environment Variables</b></summary>
 
@@ -100,29 +94,6 @@ MONGO_URI
 
 [![Deploy on Koyeb](https://img.shields.io/badge/Deploy-Koyeb-blue?style=for-the-badge&logo=koyeb)](https://app.koyeb.com/)
 
-### Steps
-- Fork this repository
-- Open Koyeb dashboard
-- Create new App
-- Connect GitHub repo
-- Set Build & Run commands
-- Add Environment Variables
-- Deploy
-
-### Build Command
-pip install -r requirements.txt
-
-### Run Command
-python bot.py
-
-### Environment Variables
-BOT_TOKEN  
-API_ID  
-API_HASH  
-OWNER_ID  
-LOG_CHANNEL  
-MONGO_URI
-
 ``` Click On Environment Variables Again To Know More ```
 ----
 
@@ -137,5 +108,5 @@ MONGO_URI
 <p align="center">
 If you like this bot, please give it a ⭐ on GitHub.
 
-<a href="https://github.com/MD-Developer-yt/AU-Auto-Button-Bot">⭐ Star Repository</a>
+<a href="https://github.com/MohammedDev-yt/AU-Auto-Button-Bot">⭐ Star Repository</a>
 </p>
