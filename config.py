@@ -39,7 +39,7 @@ BOT_USERNAME = "AU_AutoButtonAdder_bot"
 
 BUTTONS = [
     [
-        ("• Uᴘᴅᴀᴛᴇs •", "https://t.me/Anime_UpdatesAU"),
+        ("• Uᴘᴅᴀᴛᴇs •", "https://t.me/Aero_Unity"),
         ("• Oɴᴇ Pɪᴇᴄᴇ •", "https://t.me/+t_RfBWnTbqNhYWVl")
     ]
 ]
@@ -67,7 +67,7 @@ START_TEXT = """
 <b>🔥 I ᴡɪʟʟ ᴘᴏsᴛ ɪᴛ ᴛᴏ ᴄʜᴀɴɴᴇʟ
 ᴡɪᴛʜ ᴀᴜᴛᴏ ʙᴜᴛᴛᴏɴs</b>
 
-<b>⚙️ Pᴏᴡᴇʀᴇᴅ ʙʏ: @Anime_UpdatesAU</b>
+<b>⚙️ Pᴏᴡᴇʀᴇᴅ ʙʏ: @Aero_Unity</b>
 
 <b>⍟──────────────⍟</b>
 """
